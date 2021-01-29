@@ -21,7 +21,6 @@ body {
   background: #ece5ce;
   border-radius: 11px;
   box-shadow: 20px 20px #83af9d;
-  /* mix-blend-mode: multiply; */
   animation: float 5s ease-in-out infinite;
 }
 
