@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>currentColor</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hr-container">
+        <h3>hr</h3>
+        <p>
+          这不是一个关于如何写更少的CSS代码的例子，它更像是一个写更高效而且可维护的代码的示例。水平线hr用于分隔内容的不同部分，我认为水平线的出现不应该是干扰，而是辅助。
+        </p>
+        <hr />
+        <p>
+          这段代码的智能之处在于，如果你改动了文本的颜色，你就不需要再去更改水平线的颜色，它会自动地随着文本的颜色改变。在工作中我们总是寻求自动化，我们写的代码越多，我们就会越重视自动化的解决方案。
+        </p>
+      </div>
+
+      <div class="linear-gradient-container">
+        <h3>渐变</h3>
+        <div>linear-gradient</div>
+      </div>
+
+      <div class="svg-container">
+        <h3>svg</h3>
+        <div class="button">
+          <svg
+            t="1622340348049"
+            class="setting-svg"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="2386"
+            width="200"
+            height="200"
+          >
+            <path
+              d="M881 512c0-52.4 32.9-96.8 79-114.5-11-43.2-28-83.9-50.2-121.3C864.6 296.3 810 288.1 773 251c-37-37-45.2-91.7-25.1-136.8C710.4 92 669.7 75 626.5 64c-17.8 46.1-62.2 79-114.5 79-52.4 0-96.8-32.9-114.5-79-43.2 11-83.9 28-121.3 50.2 20.1 45.2 11.9 99.8-25.1 136.8-37 37-91.7 45.2-136.8 25.2C92 313.6 75 354.3 64 397.5c46.1 17.8 79 62.2 79 114.5 0 52.4-32.9 96.8-79 114.5 11 43.2 28 83.9 50.2 121.3C159.4 727.7 214 735.9 251 773c37 37 45.2 91.7 25.1 136.8C313.6 932 354.3 949 397.5 960c17.8-46.1 62.2-79 114.5-79 52.4 0 96.8 32.9 114.5 79 43.2-11 83.9-28 121.3-50.2-20.1-45.2-11.9-99.8 25.1-136.8 37-37 91.7-45.2 136.8-25.2C932 710.4 949 669.7 960 626.5c-46.1-17.7-79-62.1-79-114.5zM512 635c-67.9 0-123-55.1-123-123s55.1-123 123-123 123 55.1 123 123-55.1 123-123 123z"
+              p-id="2387"
+            ></path>
+          </svg>
+          <div>setting</div>
+        </div>
+      </div>
+
+      <div class="next-container">
+        <h3>伪元素</h3>
+        <a class="next">Next</a>
+      </div>
+
+      <div class="animation-container">
+        <h3>动画</h3>
+        <p>Using currentColor for fun and profit</p>
+        <p>
+          In pure CSS you can use <code>currentColor</code> wherever you migth
+          use a normal color value. This maps to whatever the current value of
+          color is.
+        </p>
+        <p>
+          Go ahead, stick <code>currentColor</code> in gradients and
+          backgrounds. It’s already the default for text, borders, and drop
+          shadows so you don’t even need to define current color there.
+        </p>
+
+        <button class="foobar">Foobar</button>
+      </div>
+    </div>
+  </body>
+</html>
