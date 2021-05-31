@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+.container>div {
+  margin-right: 30px;
+}
+
+/* hr */
+.hr-container {
+  padding: 20px;
+  width: 300px;
+  color: #000;
+  border: 1px solid currentColor;
+}
+
+.hr-container hr {
+  margin: 10px auto 10px;
+  width: 33%;
+  height: 5px;
+  border: none;
+  background-color: currentColor;
+  opacity: .2;
+}
+
+/* 渐变 */
+.linear-gradient-container div {
+  padding: 10px;
+  width: 200px;
+  color: #3CAADB;
+  background-image: linear-gradient(to right, #fff, currentColor 100%);
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+/* svg */
+.svg-container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+  width: 100px;
+  font-size: 18px;
+  color: #117B6F;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  color: #01B19A;
+}
+
+.button:active {
+  color: #02D7BB;
+}
+
+.button svg {
+  height: 17px;
+  width: 17px;
+  fill: currentColor;
+}
+
+.button:hover svg,
+.button:focus svg {
+  fill: currentColor;
+}
+
+.button:active svg {
+  fill: currentColor;
+}
+
+/* 伪元素 */
+.next {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  color: #000;
+}
+
+.next:hover,
+.next:focus {
+  color: #333;
+}
+
+.next:active {
+  color: #666;
+}
+
+.next::after {
+  content: '';
+  margin-left: .3em;
+  width: 0;
+  height: 0;
+  border: .5em solid transparent;
+  border-right: none;
+  display: inline-block;
+}
+
+.next::after,
+.next:hover::after,
+.next:focus::after,
+.next:active::after {
+  border-left-color: currentColor;
+}
+
+/* 动画 */
+.animation-container {
+  color: red;
+  animation: color 30s linear infinite;
+}
+
+@keyframes color {
+  33.3% {
+    color: #0f0;
+  }
+
+  66.7% {
+    color: #00f;
+  }
+}
+
+.animation-container {
+  border-top: 2px solid;
+  position: relative;
+  padding: 1em;
+}
+
+.animation-container:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .1;
+  background-color: currentColor;
+  background-image: linear-gradient(to bottom, currentColor, #fff);
+}
+
+.foobar {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+  background: white;
+  border: 2px solid;
+  margin: 0 auto;
+  border-radius: .5em;
+  box-shadow: 2px 2px;
+  font-weight: bold;
+}
